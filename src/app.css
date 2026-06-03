@@ -1,1 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Satisfy&display=swap");
+
 @import "tailwindcss";
+
+@theme {
+  --font-handwritten-cursive: "Satisfy", "Segoe Script", cursive;
+  --font-handwritten-sans: "Kalam", cursive;
+  --color-graphite: oklch(22.17% 0.0126 264.28);
+}
