@@ -1,3 +1,7 @@
+<script lang="ts">
+  import CalendarGrid from './components/CalendarGrid.svelte';
+</script>
+
 <div
   class="flex h-screen w-screen items-center justify-center bg-stone-200 p-4"
 >
@@ -12,7 +16,7 @@
     <div
       class="font-handwritten-sans flex min-h-0 flex-1 flex-col items-center gap-4 sm:flex-row sm:justify-between"
     >
-      <div>Value table</div>
+      <CalendarGrid />
       <div
         class="flex flex-col items-center justify-center gap-4 w-fit"
       >
