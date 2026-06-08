@@ -1,5 +1,6 @@
 <script lang="ts">
   import CalendarGrid from "./components/CalendarGrid.svelte";
+  import PaletteSelect from "./components/PaletteSelect.svelte";
 </script>
 
 <div
@@ -19,8 +20,10 @@
     >
       <CalendarGrid />
 
-      <div class="flex w-fit flex-col items-center justify-center gap-4">
-        <p>Colors select</p>
+      <div
+        class="flex w-fit flex-col items-center justify-center gap-4 sm:mr-3"
+      >
+        <PaletteSelect />
         <p>Year select</p>
       </div>
     </div>
