@@ -31,7 +31,7 @@
       >
         <input
           type="color"
-          class="absolute inset-0 cursor-pointer opacity-0"
+          class="inset-0 cursor-pointer opacity-0"
           bind:value={paletteValue.color}
         />
       </label>
