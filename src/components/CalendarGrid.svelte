@@ -1,6 +1,8 @@
 <script lang="ts">
   import { entries, palette, year } from "../lib/state.svelte";
 
+  import CellValueDialog from "./CellValueDialog.svelte";
+
   const months = Array.from({ length: 12 }, (_, i) => i);
   const days = Array.from({ length: 31 }, (_, i) => i);
 
@@ -17,6 +19,12 @@
   ): string {
     return `${year}-${String(monthIndex + 1).padStart(2, "0")}-${String(dayIndex + 1).padStart(2, "0")}`;
   }
+
+  function closeDialog() {
+    selectedCell = null;
+  }
+
+  let selectedCell = $state<string | null>(null);
 </script>
 
 <table class="border-collapse">
@@ -40,10 +48,14 @@
               style:background={palette[
                 entries[getDateKey(year.value, month, day)]
               ]?.color}
+              style:anchor-name={getDateKey(year.value, month, day) ===
+              selectedCell
+                ? "--selected-cell"
+                : null}
               title={palette[entries[getDateKey(year.value, month, day)]]
                 ?.label}
               onclick={() => {
-                entries[getDateKey(year.value, month, day)] = 2; // Temporary: will have separate UI for choosing value later
+                selectedCell = getDateKey(year.value, month, day);
               }}
             ></td>
           {:else}
@@ -54,3 +66,5 @@
     {/each}
   </tbody>
 </table>
+
+<CellValueDialog {selectedCell} {closeDialog} />
