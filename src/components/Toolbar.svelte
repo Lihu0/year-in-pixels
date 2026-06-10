@@ -7,6 +7,43 @@
 
   import { entries, palette } from "../lib/state.svelte";
 
+  function importData() {
+    const input = document.createElement("input");
+    input.type = "file";
+    input.accept = ".json";
+
+    input.onchange = () => {
+      const file = input.files?.[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        try {
+          const content = JSON.parse(String(e.target?.result));
+
+          if (!content.palette || !content.entries) {
+            alert("Invalid file format. Expected keys: palette, entries");
+            return;
+          }
+
+          palette.length = 0;
+          palette.push(...content.palette); // Only mutate palette since it's an import
+
+          Object.keys(entries).forEach((key) => delete entries[key]);
+          Object.keys(content.entries).forEach(
+            (key) => (entries[key] = content.entries[key]),
+          ); // Only mutate entries since it's an import
+        } catch (error) {
+          alert(`Error reading file: ${error}`);
+        }
+      };
+
+      reader.readAsText(file);
+    };
+
+    input.click();
+  }
+
   function exportData() {
     const data = {
       palette: palette,
@@ -57,10 +94,10 @@
     <ImageDown />
   </button>
   <button
-    class="cursor-not-allowed opacity-50"
-    disabled
-    title="Import JSON (WIP)"
-    aria-label="Import JSON (WIP)"
+    class="cursor-pointer"
+    title="Import JSON"
+    aria-label="Import JSON"
+    onclick={importData}
   >
     <FileUp />
   </button>
