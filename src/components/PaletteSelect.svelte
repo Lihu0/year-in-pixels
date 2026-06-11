@@ -32,7 +32,7 @@
       >
         <input
           type="color"
-          class="inset-0 cursor-pointer opacity-0"
+          class="inset-0 cursor-pointer opacity-0 h-full w-full"
           bind:value={paletteValue.color}
           aria-label={`Color picker for ${paletteValue.label}`}
         />
