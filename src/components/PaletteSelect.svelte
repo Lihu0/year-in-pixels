@@ -34,12 +34,14 @@
           type="color"
           class="inset-0 cursor-pointer opacity-0"
           bind:value={paletteValue.color}
+          aria-label={`Color picker for ${paletteValue.label}`}
         />
       </label>
 
       <span
         role="textbox"
         contenteditable
+        aria-label={`Color name for ${paletteValue.label}`}
         bind:innerText={paletteValue.label}
         class="py-1.5 text-sm underline underline-offset-[3px] sm:text-base"
       ></span>
