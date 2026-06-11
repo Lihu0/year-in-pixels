@@ -3,6 +3,13 @@
 
   import colorPalette from "../assets/colorPalette.webp";
   import preview from "../assets/preview.webp";
+
+  const h1 = "font-semibold text-4xl";
+  const h2 = "font-semibold text-2xl";
+  const h3 = "font-semibold text-xl";
+  const article = " space-y-6";
+  const section = "space-y-4";
+  const subsection = "space-y-2";
 </script>
 
 <dialog
@@ -17,12 +24,12 @@
     >
   </div>
 
-  <article class="space-y-2">
-    <h1 class="font-semibold text-4xl">Year in Pixels</h1>
+  <article class={article}>
+    <h1 class={h1}>Year in Pixels</h1>
     <img alt="A preview of the app" src={preview} />
 
-    <section>
-      <h2 class="font-semibold text-2xl">What is a Year in Pixels?</h2>
+    <section class={section}>
+      <h2 class={h2}>What is a Year in Pixels?</h2>
       <p>
         A Year in Pixels is a beautiful way to visualize your emotions (or
         anything else you want to track) in a colorful grid. It lets you
@@ -36,11 +43,11 @@
       </p>
     </section>
 
-    <section>
-      <h2 class="font-semibold text-2xl">Features</h2>
+    <section class={section}>
+      <h2 class={h2}>Features</h2>
 
-      <section>
-        <h3 class="font-semibold text-xl">Add/Edit Colors</h3>
+      <section class={subsection}>
+        <h3 class={h3}>Add/Edit Colors</h3>
         <img alt="Customize Colors" src={colorPalette} width="33%" />
         <p>
           Click on "Add color" to add a new color to your color palette. You can
