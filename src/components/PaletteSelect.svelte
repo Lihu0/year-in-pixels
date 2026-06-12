@@ -27,7 +27,7 @@
       </button>
 
       <label
-        class="border-text size-6 cursor-pointer border-2"
+        class="border-graphite size-6 cursor-pointer border-2"
         style:background={paletteValue.color}
       >
         <input

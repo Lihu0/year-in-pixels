@@ -14,7 +14,7 @@
 <div class="flex flex-col items-center gap-1">
   <label for="year-select" class="text-xl">Year:</label>
 
-  <div class="relative inline-block border-text border-3">
+  <div class="relative inline-block border-graphite border-3">
     <select
       name="year select"
       id="year-select"
