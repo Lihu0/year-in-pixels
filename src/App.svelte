@@ -10,7 +10,7 @@
 >
   <div class="max-w-150 flex w-full flex-col items-center gap-2">
     <main
-      class="text-text flex w-full flex-col bg-white p-4 shadow-[0_20px_40px_rgba(0,0,0,0.12)] outline outline-black/5 sm:p-8"
+      class="text-graphite flex w-full flex-col bg-white p-4 shadow-[0_20px_40px_rgba(0,0,0,0.12)] outline outline-black/5 sm:p-8"
     >
       <h1
         class="font-handwritten-cursive mb-4 shrink-0 text-center text-4xl sm:text-6xl"
