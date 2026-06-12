@@ -17,7 +17,7 @@
 </script>
 
 <dialog
-  class="border-2 border-black bg-white backdrop:bg-transparent outline-none
+  class="border-2 border-graphite bg-white backdrop:bg-transparent outline-none
         fixed [position-anchor:--selected-cell] left-[calc(anchor(left)+5px)] top-[calc(anchor(top)+5px)]"
   onclick={(e) => {
     if (e.target === e.currentTarget) closeDialog();
@@ -30,7 +30,7 @@
     {#each palette as paletteValue, i}
       <button
         type="button"
-        class="size-8 cursor-pointer border-2 border-black transition-opacity hover:opacity-75 outline-none"
+        class="size-8 cursor-pointer border-2 border-graphite transition-opacity hover:opacity-75 outline-none"
         style:background-color={paletteValue.color}
         title={paletteValue.label}
         onclick={() => {
@@ -45,7 +45,7 @@
 
     <button
       type="button"
-      class="relative size-8 cursor-pointer border-2 border-black transition-opacity hover:opacity-75 outline-none"
+      class="relative size-8 cursor-pointer border-2 border-graphite transition-opacity hover:opacity-75 outline-none"
       style:background-color="transparent"
       title="Clear"
       onclick={() => {
