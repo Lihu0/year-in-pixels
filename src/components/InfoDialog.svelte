@@ -127,7 +127,7 @@
         </li>
         <li>
           You can easily identify periods of joy, stress, or stagnation. As you
-          look at your Year in Pixels, you might notice positive mood in summer
+          look at your Year in Pixels, you might notice your positive mood in summer
           or a period of unhappiness.
         </li>
         <li>
