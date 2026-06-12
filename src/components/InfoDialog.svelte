@@ -126,6 +126,15 @@
           Visual trends in your Year in Pixels grid tend to reveal trends.
         </li>
         <li>
+          You can easily identify periods of joy, stress, or stagnation. As you
+          look at your Year in Pixels, you might notice positive mood in summer
+          or a period of unhappiness.
+        </li>
+        <li>
+          You can track anything you choose to track in a Year in Pixels, from
+          your mood to tracking your health.
+        </li>
+        <li>
           A Year in Pixels takes minimal time investment—just seconds each day
           to update it.
         </li>
@@ -134,6 +143,10 @@
           whole year.
         </li>
       </ul>
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="font-semibold text-2xl">Conclusion</h2>
     </section>
   </article>
 </dialog>
