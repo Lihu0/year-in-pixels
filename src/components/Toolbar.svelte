@@ -99,8 +99,8 @@
 <div class="flex w-full justify-end gap-2">
   <button
     class="cursor-pointer"
-    title="Information (WIP)"
-    aria-label="Information (WIP)"
+    title="Information"
+    aria-label="Information"
     command="show-modal"
     commandfor="info-dialog"
   >
