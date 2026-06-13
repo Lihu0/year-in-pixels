@@ -11,12 +11,12 @@ An online journaling tool that uses colors to track your feelings throughout the
 - Multi-year support.
 - Fill in a pixel each day that best represents your activity or mood for that day.
 - Export as PNG and JSON, and import a JSON file.
-- Autosave to `localstorage` with `navigator.storage.persist` API.
+- Autosave to `localStorage` with `navigator.storage.persist` API.
 
 ## Tech Stack
 
 - Frontend: Svelte 5
-- Styling: TailwindCSS
+- Styling: Tailwind CSS
 - Language: TypeScript
 - UI Icons: Lucide
 - Other Utilities: html-to-image
@@ -57,7 +57,9 @@ Before running or developing this project, ensure the following are installed:
 Run the website locally with Vite:
 
 ```bash
-npm run dev
+npm run dev # npm
+pnpm dev # pnpm
+yarn dev # yarn
 ```
 
 Open your browser and navigate to `localhost:5173` (or the port specified in your terminal) to view the site.
