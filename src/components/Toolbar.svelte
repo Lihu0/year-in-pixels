@@ -12,16 +12,7 @@
   import { entries, palette } from "../lib/state.svelte";
 
   async function downloadImage() {
-    await Promise.all([
-      document.fonts.load("300 16px Kalam"),
-      document.fonts.load("400 16px Kalam"),
-      document.fonts.load("700 16px Kalam"),
-      document.fonts.load("400 16px Satisfy"),
-    ]);
-
     await document.fonts.ready;
-    await new Promise(requestAnimationFrame);
-    await new Promise(requestAnimationFrame);
 
     const node = document.querySelector("main") as HTMLElement;
     if (!node) {
@@ -31,7 +22,7 @@
 
     const dataUrl = await toPng(node, {
       cacheBust: true,
-      pixelRatio: 2,
+      pixelRatio: 1,
       filter: (el) => {
         if (!(el instanceof Element)) return true;
         if (el.hasAttribute("data-no-export")) return false;
