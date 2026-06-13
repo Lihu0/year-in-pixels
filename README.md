@@ -2,7 +2,7 @@
 
 <img src="./src/assets/preview.webp" alt="Preview" width="33%" />
 
-An online journaling tool that uses colors to track your feelings throughout the year. A Year in Pixels lets you condense an entire day into a single pixel. By the end of the year, you get a vibrant grid summarizing your entire year.
+An online journaling tool that uses colors to track your feelings throughout the year. It lets you condense an entire day into a single pixel. By the end of the year, you get a vibrant grid summarizing your entire year.
 
 ## Features
 
