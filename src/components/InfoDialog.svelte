@@ -71,7 +71,7 @@
         <img
           alt="Select a Year"
           src={year_selection}
-          class="w-1/3 sm:w-1/4"
+          class="w-1/2 sm:w-1/3"
           loading="lazy"
         />
         <p>
@@ -102,7 +102,7 @@
         <img
           alt="Export as a PNG or JSON, and import JSON"
           src={import_and_export}
-          class="w-1/3 sm:w-1/4"
+          class="w-1/2 sm:w-1/3"
           loading="lazy"
         />
         <p>
