@@ -35,7 +35,9 @@
         <th class="pr-1.5 text-xs">{day + 1}</th>
         {#each months as month}
           {#if day < monthLengths[month]}
-            {const key = `${year.value}-${String(month + 1).padStart(2, "0")}-${String(day + 1).padStart(2, "0")}`}
+            {const key = $derived(
+              `${year.value}-${String(month + 1).padStart(2, "0")}-${String(day + 1).padStart(2, "0")}`,
+            )}
 
             <td
               class="h-4 w-4 border-2 sm:h-5 sm:w-5"
