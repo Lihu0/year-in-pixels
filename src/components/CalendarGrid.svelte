@@ -40,7 +40,7 @@
             )}
 
             <td
-              class="h-4 w-4 border-2 sm:h-5 sm:w-5"
+              class="size-4 border-2 sm:size-5"
               style:background={palette[entries[key]]?.color}
               style:anchor-name={key === selectedCell
                 ? "--selected-cell"
