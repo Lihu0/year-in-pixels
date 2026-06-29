@@ -109,7 +109,7 @@
   <a
     title="See source code on GitHub"
     aria-label="See source code on GitHub"
-    href="https://github.com/Lihu0/YearInPixels"
+    href="https://github.com/Lihu0/year-in-pixels"
     target="_blank"
     rel="noopener noreferrer"
   >
