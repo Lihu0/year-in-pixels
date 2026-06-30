@@ -43,7 +43,7 @@ Before running or developing this project, ensure the following are installed:
    ```
 2. Navigate into the project directory:
    ```bash
-   cd YearInPixels
+   cd year-in-pixels
    ```
 3. Install dependencies:
    ```bash
